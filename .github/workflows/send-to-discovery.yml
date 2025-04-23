@@ -35,7 +35,6 @@ jobs:
         resync_check: ${{ true }}
         git_diff: ${{ steps.difference-output.outputs.action_updates }}
         insecure_skip_tls_verify: ${{ env.INSECURE_SKIP_TLS_VERIFY }}
-        NODE_TLS_REJECT_UNAUTHORIZED: ${{ env.NODE_TLS_REJECT_UNAUTHORIZED }}
     - name: Display the action-result
       run: |
         echo "Result of the action: ${{ steps.discover-apis.outputs.action-result }}"
